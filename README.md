@@ -1,6 +1,40 @@
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
  <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252" /> 
 
+## About
+
+This project demonstrates image segmentation using pre-trained deep learning models. It implements both semantic segmentation (DeepLabV3) and instance segmentation (Mask R-CNN) to segment objects in images, with a focus on detecting and segmenting people.
+
+## Tech Stack
+
+### Core Frameworks & Libraries
+- **PyTorch** - Deep learning framework
+- **Torchvision** - PyTorch's computer vision library
+- **Detectron2** - Facebook Research's computer vision library for object detection and segmentation
+- **fvcore** - Facebook Vision core library (dependency for Detectron2)
+
+### Pre-trained Models
+- **DeepLabV3** (ResNet-101 backbone) - Semantic segmentation model
+- **Mask R-CNN** (ResNet-50 FPN 3x, COCO pre-trained) - Instance segmentation model
+
+### Python Libraries
+- **PIL/Pillow** - Image processing and manipulation
+- **NumPy** - Numerical computing
+- **Matplotlib** - Data visualization and plotting
+- **ImageIO** - Image I/O operations
+- **scikit-image** - Image processing algorithms (contour detection)
+- **requests** - HTTP library for downloading images
+- **Cython** - C extensions for Python (required for Detectron2 compilation)
+
+### Development Environment
+- **Google Colab** - Cloud-based Jupyter notebook environment with GPU support
+- **Jupyter Notebook** - Interactive development environment
+
+### Dataset
+- **COCO Dataset** - Pre-trained models use COCO dataset weights for object detection and segmentation
+
+---
+
 Here I used pretrained Mask R-CNN and DeepLabV3 models to perform image segmentation.
 First of all, I installed the following requirements on my Google Colab environment.
 You also need to work on GPU of Colab.
